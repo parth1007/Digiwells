@@ -1,0 +1,399 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+    display:flex;
+    background-color: #151531;
+    border-radius: 1rem;
+    color: white;
+}
+.sec1{
+    height: 100%;
+    position:relative;
+    width: 35%;
+}
+.sec2{
+    height: 100%;
+    position:relative;
+    max-width: 65%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.box1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.box2{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.box3{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+.box4{
+    margin-top:1%;
+}
+.box5{
+    margin-top:15%;
+}
+.box7{
+    margin-top:5%;
+}
+
+
+
+
+
+/* ----------------BOX1-------------- */
+
+.box1,.box2{
+    /* height: 7rem; */
+    width: 50%;
+    aspect-ratio: 2.3/1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;    
+    padding-right: 1rem;
+}
+.box1text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    
+}
+.box1text h1{
+    font-size:2.5rem;
+    text-align: left;
+    margin-left: 1rem;
+    
+}
+.box1text p{
+    font-size:0.8rem;
+    color: rgba(230, 230, 230, 0.665);
+    margin-left: 1rem;
+}
+.box1icon{
+    width: 25%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e5751;
+}
+
+
+/* ----------------BOX2-------------- */
+
+
+.box2icon{
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlap{
+    /* height: 90%; */
+    width: 80%;
+}
+
+/* ----------------BOX3-------------- */
+
+
+.box3{
+    aspect-ratio: 1/1;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.box3text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.box3text p {
+    font-size: 0.8rem;
+    color: rgba(230, 230, 230, 0.665);
+    margin-top: 0.3rem;
+}
+
+/* ----------------BOX5-------------- */
+
+.box5{
+    height: 15rem;
+    width: 12rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box5 h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.circular{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+    background:
+    linear-gradient(70deg, #9d08f5 50%,transparent 0), 
+    linear-gradient(to left, #27124e 50%,transparent 0),
+    #9d08f5
+}
+.innercircle{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.8rem solid #9d0a55; */
+    font-size: 1.7rem;
+    background-color: #151531;
+    z-index:5
+}
+.box5text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* -------------------BOX7-------------------- */
+
+
+.box7{
+    background-color: #151531;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.boxtitle{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 0;
+    width: 80%;
+}
+
+.itemlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    gap: 7%;
+}
+
+.box7item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 20%;
+    width: 90%;
+    gap: 10%;
+}
+.box7itemtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box7itemtext h4{
+    font-weight: 400;
+}
+.box7itemtext p{
+    color:#8a8795;
+}
+
+
+.boxtick{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #35334d;
+}
+
+.box7itemtext{
+    width: 60%;
+}
+.more {
+    width: 15%;
+}
+
+
+/* -------------------BOX4-------------------- */
+
+
+.box4{
+    background-color: #151531;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.itemlist4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+    margin-left: 10%;
+    gap: 7%;
+}
+
+.boxtick4{
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+/* -----------------MEDIA QURIES------------- */
+
+
+@media only screen and (max-width: 1000px) {
+    .box7{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .sec1,.sec2{
+        width:90%;
+        /* border: 1px solid black; */
+        min-height: 20rem;
+        height:20rem;
+    }
+    .sec2{
+        width:90%;
+        max-width: 90%;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .box1{
+        top: 45%;
+        left: 5%;
+    }
+    .box2{
+        top: 5%;
+        right: 5%;
+    }
+    .box3{
+        top: 50%;
+        right: 8%;
+    }
+
+    .box1,.box2{
+        width: 16rem;
+        aspect-ratio: 2.3/1;
+        color: white;    
+        padding-right: 1rem;
+    }
+    .box3{
+        width:8rem;
+    }
+    .box5{
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 18rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 550px) {
+    .sec1{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height:auto;
+    }
+    .box1,.box2,.box3{
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+    .sec2{
+        padding-top: 2rem;;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height:auto;
+    }
+    .box4{
+        width:18rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .box4,.box5{
+        width:16rem;
+    }
+}

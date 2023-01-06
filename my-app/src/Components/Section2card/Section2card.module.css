@@ -1,0 +1,121 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+    background-color: #151531;
+    border-radius: 32px;
+    color: #fff;
+    gap: 3%;
+    position: relative;
+}
+
+.title{
+    font-size: 2.5rem;
+    width: 50%;
+}
+.desc{
+    font-size: 0.8rem;
+    width: 40%;
+}
+
+.statsbox{
+    width: 70%;
+    height: 30%;
+    background-color: #2c2c46;
+    border-radius: 1rem;
+    margin-top:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 6%;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 90%;
+}
+.stat-v{
+    font-size: 2rem;
+}
+.stat-t{
+    font-size: 1rem;
+}
+.vline{
+    background-color: rgba(255, 255, 255, 0.535);
+    height: 60%;
+    width: 0.5px;
+}
+
+.left{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 35%;
+}
+
+.right{
+    position: absolute;
+    top: 60%;
+    right: 0;
+    height: 30%;
+}
+
+
+/* -------------------- MEDIA QUERIES ------------------- */
+
+@media screen and (max-width: 1000px){
+    .card{
+        width: 70%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .stat-v{
+        font-size: 1.8rem;
+    }
+    .stat-t{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .card{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .card{
+        width: 95%;
+    }
+    .left,.right{
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+    .statsbox{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        gap: 0%;
+        height: 45%;
+    }
+    .vline{
+        display: none;
+    }
+    .left,.right{
+        display: none;
+    }
+    .title,.desc{
+        width: 80%;
+    }
+
+}

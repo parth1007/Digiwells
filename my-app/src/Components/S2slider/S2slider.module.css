@@ -1,0 +1,12 @@
+.slider{
+    height:100%;
+    width:100%;
+}
+
+.layer1,.layer2{
+    height:50%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

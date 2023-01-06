@@ -1,0 +1,56 @@
+.section2{
+    /* height: 110vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+/* -------------------- MEDIA QUERIES ------------------- */
+
+@media screen and (max-width: 520px){
+    .div2{
+        height: 28rem;
+    }
+    
+}
+
+@media screen and (max-width: 420px){
+    .div2{
+        height: 35rem;
+    }
+    
+}
+

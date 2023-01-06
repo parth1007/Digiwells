@@ -1,0 +1,131 @@
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 10vh;
+  background-color: #fffaff;
+  width: 100%;
+  position: relative;
+}
+
+.div1{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  height: 100%;
+}
+.div2{
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+  height: 100%;
+}
+.div3{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  gap:6%;
+  align-items: center;
+  height: 100%;
+  padding-left: 1rem;
+}
+.div3responsive{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  gap:6%;
+  align-items: center;
+  height: 100%;
+  /* padding-left: 1rem; */
+  display:none;
+}
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  cursor: pointer;
+}
+.cart div{
+  color: #9D0AFF;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid#9D0AFF;
+  border-radius: 16px;
+  height: 60%;
+  width: 20%;
+  color: #9D0AFF;
+}
+.login:hover{
+  background: #9D0AFF;
+  color: #fff;
+  cursor: pointer;
+}
+.getstart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9D0AFF;
+  border-radius: 16px;
+  height: 60% ;
+  width: 25%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logotxt{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navtxt{
+  cursor: pointer;
+}
+.navtxt:hover{
+  color: #9D0AFF;
+}
+
+.menudiv{
+  background-color: #9D0AFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+
+/* -----------------MEDIA QURIES------------- */
+
+
+@media only screen and (max-width: 800px) {
+
+  .div3responsive{
+    display: flex;
+  }
+  .div1,.div3responsive{
+    width: 50%;
+  }
+  .div2,.div3{
+    display: none;
+  }
+  .logotxt{
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .logotxt{
+      font-size: 6vw;
+    }
+}

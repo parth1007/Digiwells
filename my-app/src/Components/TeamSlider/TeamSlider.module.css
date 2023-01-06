@@ -1,0 +1,45 @@
+.teamslider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.div1txt{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+    color: rgba(21, 21, 49, 0.6);
+}
+
+.teambar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    gap: 5%;
+    margin-top: 1rem;
+
+}
+.teamimg{
+    height: 4rem;
+}
+
+/* -------------------- MEDIA QUERIES ------------------- */
+
+@media screen and (max-width: 1000px){
+    .teambar{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .teambar{
+        width: 80%;
+    }
+}

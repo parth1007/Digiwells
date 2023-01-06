@@ -1,0 +1,134 @@
+.section{
+    width: 100%;
+    /* height:90vh; */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings{
+    height: 80%;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:5%;
+    text-align: left;
+    gap: 5%;
+    padding-left: 6%;
+    padding-right: 2%;
+}
+
+.headings h1{
+    font-size:3rem;
+    text-align: left;
+}
+
+/* -------------------CARDS GRID------------------- */
+
+.cards{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+}
+
+.cardscol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:10%;
+    width: 45%;
+}
+
+/* -------------------CARDS------------------- */
+
+.card{
+    width:80%;
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2.5rem;
+    gap: 5%;
+    box-shadow: 0px 8px 80px rgba(21, 21, 49, 0.133);
+    background-color: #fff;
+    border-radius: 30px;
+
+}
+.icon{
+    height: 3rem;
+    width: 3rem;
+    background-color: #9D0AFF;
+    border-radius: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.title{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+    font-weight: 500;
+    
+}
+.text{
+    font-size: 0.8rem;
+    text-align: left;
+    color:#000000bd;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* ------------------MEDIA QUERIES------------------ */
+
+@media screen and (max-width: 1000px){
+    .cards{
+        gap: 0%;
+    }
+    .card{
+        padding-left: 1.5rem;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 750px){
+    .section{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .headings{
+        width: 60%;
+        align-items: center;
+    }
+    .cards{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width:15rem; 
+    }
+    .headings h1{
+        font-size: 2rem;
+    }
+    .headings{
+        width: 80%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,84 @@
+.s4text{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.s4text h1{
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.s4text p{
+    text-align: left;
+    margin-top: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+.listobj{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.topobj{
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.sliderobj{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.tick{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/* --------------MEDIA QUERIES-------------- */
+
+@media screen and (max-width: 1050px){
+    .s4text{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .s4text{
+        width: 90%;
+    }
+    .s4text h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .s4text{
+        width: 100%;
+    }
+    .s4text h1{
+        font-size: 2.1rem;
+    }
+}
