@@ -3,7 +3,7 @@ import styles from "./Admin.module.css"
 
 import { useEffect,useState,useRef } from "react";
 
-const HOST = "http://localhost:8000";
+const HOST = "https://parth-digiwells-backend.onrender.com";
 
 
 const Admin = () => {

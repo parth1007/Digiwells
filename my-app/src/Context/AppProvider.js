@@ -4,7 +4,7 @@ import { useContext,useState,useEffect,createContext } from "react";
 
 
 const AppContext = createContext();
-const HOST = "http://localhost:8000";
+const HOST = "https://parth-digiwells-backend.onrender.com";
 
 
 

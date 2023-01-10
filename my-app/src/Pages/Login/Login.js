@@ -5,7 +5,7 @@ import { useState,useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
 
 
-const HOST = "http://localhost:8000";
+const HOST = "https://parth-digiwells-backend.onrender.com";
 
 
 

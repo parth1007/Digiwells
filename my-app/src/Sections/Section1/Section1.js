@@ -4,7 +4,7 @@ import landing from '../../Assets/Logos/landing.png'
 import S1box from "../../Components/S1box/S1box"
 import { useEffect,useState } from "react";
 
-const HOST = "http://localhost:8000";
+const HOST = "https://parth-digiwells-backend.onrender.com";
 
 const Section1 = () => {
 

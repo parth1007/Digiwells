@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { useEffect,useState } from "react";
 
 
-const HOST = "http://localhost:8000";
+const HOST = "https://parth-digiwells-backend.onrender.com";
 
 const Navbar = () => {
 

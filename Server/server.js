@@ -45,7 +45,8 @@ app.post("/api/admin/login", (req, res) => {
         if(adminidreq !== data.email){
             res.status(404).send("Wrong credentials1!");
         }
-        else if(adminpasswordreq !== data.passsword){
+        else if(adminpasswordreq !== data?.password){
+            console.log(adminpasswordreq,data?.password)
             res.status(404).send("Wrong credentials2!");
         }
         else{
