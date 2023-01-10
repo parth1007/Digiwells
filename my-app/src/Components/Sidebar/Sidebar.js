@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Sidebar.module.css'
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from "react-router-dom";
 
 
 const Sidebar = ({functions}) => {
@@ -10,7 +11,7 @@ const Sidebar = ({functions}) => {
             <CloseIcon sx={{color:"white"}} onClick={()=>{functions(false)}}/>
         </div>
         <div className={styles['login']}>
-            <button className={styles['loginbtn']} >Login</button>
+        <Link to="/login" className={styles['loginbtn']} style={{textDecoration:"None"}}>  <div> Login</div></Link>
         </div>
         <div className={styles['content']}>
             <div className={styles['menuitem']}>About</div>

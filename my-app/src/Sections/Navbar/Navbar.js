@@ -1,14 +1,45 @@
 import React from 'react'
 import styles from './navbar.module.css'
-import logo from '../../Assets/Logos/nav.png'
+import logodefault from '../../Assets/Logos/nav.png'
 import cart from '../../Assets/Logos/cart.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from '../../Components/Sidebar/Sidebar'
-import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { useEffect,useState } from "react";
+
+
+const HOST = "http://localhost:8000";
 
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const [data, setData] = useState();
+  const [logo,setlogo] = useState("../../Assets/Logos/nav.png");
+
+  useEffect(() => {
+      async function fetchData() {
+          const response = await fetch(`${HOST}/api/admin/fetchdata`, {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+            }
+          });
+
+        const data = await response.json() // parse the response as JSON
+        console.log(data)
+        setData(data)
+        setlogo(`${HOST}/${data?.logo}`);
+      }
+      fetchData();
+      
+
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
+
+
+
   return (
     
     <div className={styles['navbar']}>
@@ -32,7 +63,7 @@ const Navbar = () => {
             <img alt="svg1107" src={cart} className={styles['cartsvg']}/>
             <div className={styles['carttxt']}>Cart</div>
             </div>
-            <div className={styles['login']}> Login</div>
+            <Link to="/login" className={styles['login']} style={{textDecoration:"None"}}>  <div> Login</div></Link>
             <div className={styles['getstart']}> Get Started </div>
         </div>
 
@@ -41,7 +72,7 @@ const Navbar = () => {
                 <img alt="svg1107" src={cart} className={styles['cartsvg']}/>
                 <div className={styles['carttxt']}>Cart</div>
               </div>
-              <div className={styles['menudiv']} onClick={()=>{console.log(isOpen);setIsOpen(true)}}>
+              <div className={styles['menudiv']} onClick={()=>{setIsOpen(true)}}>
                 <MenuIcon sx={{color:"white"}}/>
               </div>
               
